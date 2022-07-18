@@ -22,6 +22,52 @@ hr{
     border: 1px solid #D1D1D1;
     margin-bottom: 27px;
 }
+/* Header panel */
+.header{
+    background-color: #562EFF;
+    border-radius: 5px;
+}
+.header-panel{
+    margin: auto;
+    width: 930px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-name{
+    display: flex;
+    align-items: center;
+}
+.logo-name img{
+    width: 40.42px;
+    height: 51px;
+    margin-right: 16px;
+}
+.logo-name, .header-title{
+    font-size: 24px;
+    color: white;
+}
+.nav-profile{
+    display: flex;
+    align-items: center;
+}
+.navigator ul{
+    display: flex;
+    list-style: none;
+}
+.navigator ul li a{
+    text-decoration: none;
+    margin-right: 36px;
+    color: white;
+    transition: 200ms;
+}
+.navigator ul li a:hover{
+    color: #FFE4E8;
+    transition: 200ms;
+}
+.nav-profile img{
+    width: 51px;
+    height: 51px;
+}
 /* Top Player Style */
 .top-players{
     margin-bottom: 30px;
@@ -133,6 +179,16 @@ Media Queries
         text-align: center;
         margin: auto;
     }
+    .header-panel{
+        flex-direction: column;
+        width: 60%;
+        padding: 0 40px;
+        align-items: center;
+    }
+    .nav-profile{
+        flex-direction: column;
+        padding: 0 0 10px 0;
+    }
 }
 
 /* Tablete Devices */
@@ -151,5 +207,10 @@ Media Queries
         flex-direction: column;
         text-align: center;
         margin: auto;
+    }
+    .header-panel{
+        width: 80%;
+        padding: 0 40px;
+        align-items: center;
     }
 }
